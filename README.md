@@ -48,8 +48,8 @@ josa-day2-rag-grounded-chatbots/
 │   ├── Basic_app.py              # Streamlit app
 │   └── Basic_rag_chatbot.ipynb   # Same pipeline in Jupyter
 ├── Enhanced_Rag/
-│   ├── complex_app.py            # Streamlit app (production-style features)
-│   └── complex_rag_chatbot.ipynb
+│   ├── Enhanced_app.py            # Streamlit app (production-style features)
+│   └── Enhanced_rag_chatbot.ipynb
 ├── data/
 │   ├── Basic_FQA.txt             # Basic track knowledge base
 │   ├── full_detailed_data.txt    # Enhanced track (Category / Q / A metadata)
@@ -92,12 +92,12 @@ streamlit run Basic_Rag/Basic_app.py
 **Enhanced - Streamlit**
 
 ```bash
-streamlit run Enhanced_Rag/complex_app.py
+streamlit run Enhanced_Rag/Enhanced_app.py
 ```
 
-Point `FAQ_FILE_PATH` in `complex_app.py` to `data/full_detailed_data.txt` if you use that file (the notebook already does).
+Point `FAQ_FILE_PATH` in `Enhanced_app.py` to `data/full_detailed_data.txt` if you use that file (the notebook already does).
 
-**Enhanced - Jupyter:** open `Enhanced_Rag/complex_rag_chatbot.ipynb`
+**Enhanced - Jupyter:** open `Enhanced_Rag/Enhanced_rag_chatbot.ipynb`
 
 In each app, use the sidebar to **ingest documents** before asking questions.
 
