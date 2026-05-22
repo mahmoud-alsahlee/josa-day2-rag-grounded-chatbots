@@ -1,0 +1,227 @@
+Q: What is a RAG chatbot?
+A: A RAG chatbot retrieves relevant information from documents before generating an answer.
+
+Q: Why do we use embeddings?
+A: Embeddings convert text into vectors so we can search for semantically similar content.
+
+Q: What is a vector database?
+A: A vector database stores embeddings and allows similarity search.
+
+Q: What does chunking mean?
+A: Chunking means splitting long documents into smaller parts that are easier to search and retrieve.
+
+Q: Why should the chatbot answer only from retrieved context?
+A: This reduces hallucination and makes the answer more grounded in the provided documents.
+
+Q: What does RAG stand for?
+A: RAG stands for Retrieval-Augmented Generation.
+
+Q: What problem does RAG solve?
+A: RAG helps the chatbot answer using relevant information instead of relying only on the model’s memory.
+
+Q: What is retrieval in a RAG system?
+A: Retrieval means searching for the most relevant document chunks based on the user’s question.
+
+Q: What is generation in a RAG system?
+A: Generation means using the language model to create an answer based on the retrieved context.
+
+Q: What is a document chunk?
+A: A document chunk is a small piece of a larger document used for searching and answering questions.
+
+Q: Why do we split documents into chunks?
+A: We split documents into chunks so the system can find and retrieve the most relevant parts more easily.
+
+Q: What happens if chunks are too large?
+A: Large chunks may contain too much unrelated information and make retrieval less accurate.
+
+Q: What happens if chunks are too small?
+A: Small chunks may lose important context needed to answer the question correctly.
+
+Q: What is semantic search?
+A: Semantic search finds text with similar meaning, not just matching words.
+
+Q: How is semantic search different from keyword search?
+A: Keyword search looks for exact words, while semantic search looks for similar meaning.
+
+Q: What is an embedding model?
+A: An embedding model converts text into numerical vectors that represent meaning.
+
+Q: What is a vector?
+A: A vector is a list of numbers that represents the meaning of a piece of text.
+
+Q: Why do similar texts have similar embeddings?
+A: Similar texts have similar embeddings because the model places related meanings close together in vector space.
+
+Q: What is similarity search?
+A: Similarity search finds vectors that are closest to the vector of the user’s question.
+
+Q: What is retrieved context?
+A: Retrieved context is the information selected from documents to help answer the user’s question.
+
+Q: What is grounding?
+A: Grounding means making the chatbot’s answer depend on the provided documents or retrieved context.
+
+Q: What is hallucination in chatbots?
+A: Hallucination happens when a chatbot gives an answer that sounds correct but is not supported by facts.
+
+Q: How does RAG reduce hallucination?
+A: RAG reduces hallucination by giving the model relevant information to use before answering.
+
+Q: What is a knowledge base?
+A: A knowledge base is a collection of documents or information that the chatbot can search through.
+
+Q: What types of documents can be used in a RAG system?
+A: A RAG system can use FAQs, manuals, articles, policies, notes, or other text documents.
+
+Q: What is indexing?
+A: Indexing means preparing and storing document embeddings so they can be searched quickly.
+
+Q: Why do we store embeddings in a vector database?
+A: We store embeddings in a vector database so the system can quickly find similar chunks.
+
+Q: What is a user query?
+A: A user query is the question or message entered by the user.
+
+Q: What happens when a user asks a question in a RAG chatbot?
+A: The system embeds the question, retrieves relevant chunks, and asks the model to answer using those chunks.
+
+Q: What is top-k retrieval?
+A: Top-k retrieval means returning the most relevant k chunks from the vector database.
+
+Q: What does top-3 retrieval mean?
+A: Top-3 retrieval means retrieving the three most relevant chunks for the user’s question.
+
+Q: Why should we limit the number of retrieved chunks?
+A: We limit retrieved chunks to avoid giving the model too much or irrelevant information.
+
+Q: What is context relevance?
+A: Context relevance measures whether the retrieved chunks are useful for answering the question.
+
+Q: What is answer faithfulness?
+A: Answer faithfulness means the answer is supported by the retrieved context.
+
+Q: What should the chatbot do if the answer is not in the context?
+A: The chatbot should say that it does not know based on the provided information.
+
+Q: Why is it important for the chatbot to say “I don’t know” sometimes?
+A: It prevents the chatbot from inventing unsupported answers.
+
+Q: What is a prompt in a RAG chatbot?
+A: A prompt is the instruction given to the language model, usually including the user question and retrieved context.
+
+Q: What should a good RAG prompt include?
+A: A good RAG prompt should include clear instructions, the retrieved context, and the user’s question.
+
+Q: Why do we include instructions in the prompt?
+A: Instructions guide the chatbot to answer correctly and only use the provided context.
+
+Q: What is OpenAI used for in a basic RAG system?
+A: OpenAI can be used to create embeddings and generate answers.
+
+Q: What is the role of the embedding model?
+A: The embedding model converts documents and user questions into vectors.
+
+Q: What is the role of the chat model?
+A: The chat model generates the final answer using the retrieved context.
+
+Q: What is the difference between training and retrieval?
+A: Training changes the model, while retrieval searches external documents without changing the model.
+
+Q: Do we need to train a model to build a basic RAG chatbot?
+A: No, a basic RAG chatbot can use existing models with a custom knowledge base.
+
+Q: Why is RAG useful for company documents?
+A: RAG allows a chatbot to answer based on company-specific information.
+
+Q: Can RAG answer questions about new information?
+A: Yes, if the new information is added to the knowledge base.
+
+Q: What happens if the knowledge base is outdated?
+A: The chatbot may give outdated answers because it retrieves from old information.
+
+Q: Why is document quality important in RAG?
+A: Good documents help the chatbot retrieve accurate information and generate better answers.
+
+Q: What is a source document?
+A: A source document is the original document where the retrieved information comes from.
+
+Q: Why should we show sources in a RAG chatbot?
+A: Showing sources helps users trust and verify the chatbot’s answer.
+
+Q: What is a basic RAG pipeline?
+A: A basic RAG pipeline includes loading documents, chunking, embedding, storing, retrieving, and generating answers.
+
+Q: What does document loading mean?
+A: Document loading means reading text files or documents into the system.
+
+Q: What does preprocessing mean?
+A: Preprocessing means cleaning and preparing text before chunking or embedding.
+
+Q: What is context window?
+A: The context window is the amount of text the model can read at one time.
+
+Q: Why can’t we give all documents directly to the model?
+A: The model has a limited context window, so we retrieve only the most relevant parts.
+
+Q: What is cosine similarity?
+A: Cosine similarity is a method used to measure how close two vectors are in meaning.
+
+Q: What is a similarity score?
+A: A similarity score shows how close a document chunk is to the user’s question.
+
+Q: What does a high similarity score mean?
+A: A high similarity score means the chunk is likely relevant to the question.
+
+Q: What does a low similarity score mean?
+A: A low similarity score means the chunk may not be very relevant to the question.
+
+Q: What is the difference between RAG and a normal chatbot?
+A: A normal chatbot answers from model knowledge, while a RAG chatbot first retrieves information from documents.
+
+Q: Why is RAG good for learning projects?
+A: RAG is easy to understand and shows how AI can use external knowledge.
+
+Q: What is the final answer in a RAG system based on?
+A: The final answer is based on the user question and the retrieved context.
+
+Q: What is an example of a grounded answer?
+A: A grounded answer is an answer that can be traced back to the retrieved document content.
+
+Q: What is an ungrounded answer?
+A: An ungrounded answer is an answer that is not supported by the retrieved context.
+
+Q: How can we evaluate a RAG chatbot?
+A: We can evaluate retrieval quality, answer correctness, faithfulness, and user feedback.
+
+Q: What is retrieval accuracy?
+A: Retrieval accuracy checks whether the system retrieved the right chunks.
+
+Q: What is answer correctness?
+A: Answer correctness checks whether the chatbot’s answer is factually correct.
+
+Q: What is user feedback?
+A: User feedback is the user’s opinion about whether the chatbot’s answer was helpful.
+
+Q: Why is testing important in RAG?
+A: Testing helps us know if the chatbot retrieves good context and gives reliable answers.
+
+Q: What is a fallback answer?
+A: A fallback answer is a safe response used when the chatbot cannot find enough information.
+
+Q: What is an example of a fallback answer?
+A: “I don’t have enough information in the provided context to answer that.”
+
+Q: Can a RAG chatbot use PDFs?
+A: Yes, a RAG chatbot can use PDFs if their text is extracted and added to the knowledge base.
+
+Q: Can a RAG chatbot use websites?
+A: Yes, website content can be collected, cleaned, chunked, and added to the knowledge base.
+
+Q: What is a chatbot response?
+A: A chatbot response is the answer generated for the user’s question.
+
+Q: Why should responses be clear and short?
+A: Clear and short responses are easier for users to understand.
+
+Q: What is the main goal of a basic RAG chatbot?
+A: The main goal is to answer user questions using trusted information from a knowledge base.
